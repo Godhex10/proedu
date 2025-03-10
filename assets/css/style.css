@@ -2615,7 +2615,7 @@ li a:hover,
     flex-direction: column;
     gap: 8px;
     list-style: none;
-	margin-left: -40px;
+	margin-left: 0px;
 }
 .menu-box a {
     /* border: solid; */
