@@ -1496,6 +1496,7 @@ section {
 /* Button Rounded */
 .btn--rounded {
 	border-radius: 50px;
+	margin-top: 10px;
 }
 
 /* Button Bordered */
