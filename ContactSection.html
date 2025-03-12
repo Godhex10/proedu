@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-section {
+    padding: 50px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    width: 50%;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-section .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.info-box {
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin: 0;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #4F46E5;
+    font-weight: bold;
+}
+
+.form-section {
+    width: 50%;
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+.form-section h2 {
+    color: #4F46E5;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+    .image-section, .form-section {
+        width: 100%;
+    }
+}
+
+	</style>
+</head>
+<body>
+
+    <form action="https://fabform.io/f/xxxxx" method="post">
+        <section class="contact-section">
+            <div class="container">
+                <div class="grid">
+                    <div class="image-section">
+                        <img src="https://pagedone.io/asset/uploads/1696488602.png" alt="Contact Us">
+                        <h1 class="title">Contact us</h1>
+                        <div class="contact-info">
+                            <div class="info-box">
+                                <p>📞 470-601-1911</p>
+                            </div>
+                            <div class="info-box">
+                                <p>📧 <a href="https://veilmail.io/irish-geoff">veilmail.io/irish-geoff</a></p>
+                            </div>
+                            <div class="info-box">
+                                <p>📍 654 Sycamore Avenue, Meadowville, WA 76543</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Send Us A Message</h2>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="phone" placeholder="Phone" required>
+                        
+                        <div class="radio-group">
+                            <p>Preferred method of communication:</p>
+                            <label><input type="radio" name="contact-method" value="email" required> Email</label>
+                            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                        </div>
+
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+
+</body>
+</html>
