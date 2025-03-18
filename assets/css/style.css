@@ -1887,7 +1887,7 @@ textarea.form-control {
 
 .header .navbar {
 	top: 0;
-	margin-right: 28px;
+	/* margin-right: 28px; */
 }
 
 .navbar-toggle .icon-bar {
